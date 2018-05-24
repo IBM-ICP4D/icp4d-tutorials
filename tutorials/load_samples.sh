@@ -21,31 +21,59 @@ list_samples()
 
 __load()
 {
+   if [ -d "$1" ]; then
      cd $1
-  .  load.sh
-
+    .  load.sh
+   else
+     echo "Invalid Tutorial Number " $1 
+   fi
 }
 
 
 ##### Main
 
-interactive=
+tutorial=
+help=
+list=
+ 
+
+if [[ $# -eq 0 ]]; then
+    usage
+	exit 1
+fi
+
 
 while [ "$1" != "" ]; do
     case $1 in
         -t | --tutorial )       shift
                                 module=$1
-				__load $module
-                                exit
+								tutorial=true								
                                 ;;
-        -l | --list )           list_samples
+        -l | --list )           list=true
                                 ;;
-        -h | --help )           usage
-                                exit
+        -h | --help )           help=true
                                 ;;
         * )                     usage
-                                exit 1
+                                
     esac
     shift
 done
 
+
+if [ "$list" = true ]; then
+	list_samples
+	exit
+
+fi
+
+if [ "$help" = "true" ]; then
+	usage
+	exit
+
+fi
+
+
+if [ "$tutorial" = "true" ]; then
+	__load $module
+
+fi
