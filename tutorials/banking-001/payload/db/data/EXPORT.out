@@ -3,17 +3,18 @@
 
 Action:  EXPORT
 
-Start time:  Thu Sep 10 12:08:16 2015
+Start time:  Sat Apr 22 23:58:47 2017
 
 
-Connecting to database BANKDEMO ... successful!  Server : DB2 Common Server V10.5.2
+Connecting to database SAMPLE ... successful!  Server : DB2 Common Server V10.1.2
 
 EXPORT:   2941 rows from table "BANK3   "."ACCOUNT_HOLDERS"
 EXPORT:   3532 rows from table "BANK2   "."BANK_ACCOUNTS"
 EXPORT:   5112 rows from table "BANK1   "."BANK_CLIENTS"
 EXPORT:   3008 rows from table "BANK2   "."BANK_CUSTOMERS"
+EXPORT:     30 rows from table "BANK2   "."BANK_WRKEX_SALARY"
 EXPORT:   2199 rows from table "BANK3   "."CHECKING_ACCOUNTS"
-EXPORT:    154 rows from table "SYSTOOLS"."HMON_ATM_INFO"
+EXPORT:    153 rows from table "SYSTOOLS"."HMON_ATM_INFO"
 EXPORT:      0 rows from table "SYSTOOLS"."HMON_COLLECTION"
 EXPORT:      5 rows from table "SYSTOOLS"."POLICY"
 EXPORT:   2213 rows from table "BANK3   "."SAVINGS_ACCOUNTS"
@@ -21,4 +22,4 @@ EXPORT:      1 rows from table "SYSTOOLS"."STMG_DBSIZE_INFO"
 
 Disconnecting from database ... successful!
 
-End time:  Thu Sep 10 12:08:21 2015
+End time:  Sat Apr 22 23:58:48 2017

@@ -1,0 +1,84 @@
+
+*****  DB2MOVE  *****
+
+Action:  IMPORT
+
+Start time:  Sun Apr 23 01:09:11 2017
+
+
+Connecting to database SAMPLE ... successful!  Server : DB2 Common Server V10.1.2
+
+Binding package automatically ... /home/db2inst1/sqllib/bnd/db2common.bnd ... successful!
+
+Binding package automatically ... /home/db2inst1/sqllib/bnd/db2move.bnd ... successful!
+
+* IMPORT:  table "BANK3   "."ACCOUNT_HOLDERS"    
+  -Rows read:       2941
+  -Inserted:        2941
+  -Rejected:           0
+  -Committed:       2941
+
+* IMPORT:  table "BANK2   "."BANK_ACCOUNTS"      
+  -Rows read:       3532
+  -Inserted:        3532
+  -Rejected:           0
+  -Committed:       3532
+
+* IMPORT:  table "BANK1   "."BANK_CLIENTS"       
+  -Rows read:       5112
+  -Inserted:        5112
+  -Rejected:           0
+  -Committed:       5112
+
+* IMPORT:  table "BANK2   "."BANK_CUSTOMERS"     
+  -Rows read:       3008
+  -Inserted:        3008
+  -Rejected:           0
+  -Committed:       3008
+
+* IMPORT:  table "BANK2   "."BANK_WRKEX_SALARY"  
+  -Rows read:         30
+  -Inserted:          30
+  -Rejected:           0
+  -Committed:         30
+
+* IMPORT:  table "BANK3   "."CHECKING_ACCOUNTS"  
+  -Rows read:       2199
+  -Inserted:        2199
+  -Rejected:           0
+  -Committed:       2199
+
+* IMPORT:  table "SYSTOOLS"."HMON_ATM_INFO"      
+  -Rows read:        153
+  -Inserted:         153
+  -Rejected:           0
+  -Committed:        153
+
+* IMPORT:  table "SYSTOOLS"."HMON_COLLECTION"    
+  -Rows read:          0
+  -Inserted:           0
+  -Rejected:           0
+  -Committed:          0
+
+* IMPORT:  table "SYSTOOLS"."POLICY"             
+  -Rows read:          5
+  -Inserted:           5
+  -Rejected:           0
+  -Committed:          5
+
+* IMPORT:  table "BANK3   "."SAVINGS_ACCOUNTS"   
+  -Rows read:       2213
+  -Inserted:        2213
+  -Rejected:           0
+  -Committed:       2213
+
+* IMPORT:  table "SYSTOOLS"."STMG_DBSIZE_INFO"   
+  -Rows read:          1
+  -Inserted:           1
+  -Rejected:           0
+  -Committed:          1
+
+
+Disconnecting from database ... successful!
+
+End time:  Sun Apr 23 01:09:52 2017
