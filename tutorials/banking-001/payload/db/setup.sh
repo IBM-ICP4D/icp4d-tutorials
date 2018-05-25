@@ -19,21 +19,21 @@ __loadDB2Docker()
 		exit 1
 	fi
 
-   echo -e "\nLoading $1..." 
+   echo -e "\nLoading Docker $DB2_DOCKER_NAME ..." 
     $D run -d --name $DB2_DOCKER_NAME -p 50000:50000 -e DB2INST1_PASSWORD=password -e LICENSE=accept  ibmcom/db2express-c:latest db2start
 	
    
-   echo -e "\nMaking some space for data" ${PWD}
+   echo -e "\nMaking some space for data" 
    #make a sample directory
    $D   exec $DB2_DOCKER_NAME bash -c  "mkdir -p samples/payload"
    
-   echo -e "\nMoving Payload to DB2" ${PWD}
+   echo -e "\nMoving Payload to DB2"
    #push the payload 
    $D cp data  $DB2_DOCKER_NAME:/samples/payload
    $D cp load.sh  $DB2_DOCKER_NAME:/samples/payload
    $D cp runbankCmd.sh  $DB2_DOCKER_NAME:/samples/payload
 
-   echo -e "\nDB2 being loaded with data for you to try out" ${PWD}
+   echo -e "\nDB2 being loaded with data for you to try out"
    
    #run setup the payload 
    $D exec  $DB2_DOCKER_NAME  bash -c "cd /samples/payload && chmod -R 777 data  &&  ./load.sh" 
