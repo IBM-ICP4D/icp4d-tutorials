@@ -21,7 +21,9 @@ __loadDB2Docker()
 
    echo -e "\nLoading Docker $DB2_DOCKER_NAME ..." 
     $D run -d --name $DB2_DOCKER_NAME -p 50000:50000 -e DB2INST1_PASSWORD=password -e LICENSE=accept  ibmcom/db2express-c:latest db2start
-	
+   #Wait couple of minutes to make sure db2 instance started and online
+   sleep 120
+
    
    echo -e "\nMaking some space for data" 
    #make a sample directory
