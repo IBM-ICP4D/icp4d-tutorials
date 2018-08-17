@@ -11,8 +11,6 @@ D=docker
 
 __loadDB2Docker()
 {
-
-
    $D images > /dev/null 2>&1; rc=$?;
    if [[ $rc != 0 ]]; then
                 echo "Docker Not Installed. Are you on ICP4D cluster environment ?"
@@ -40,8 +38,6 @@ __loadDB2Docker()
 
    #run setup the payload
    $D exec  $DB2_DOCKER_NAME  bash -c "cd /samples/payload && chmod -R 777 data  &&  ./load.sh"
-
-
 }
 
 __loadDB2Docker
