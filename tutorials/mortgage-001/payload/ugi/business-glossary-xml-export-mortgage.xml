@@ -2,10 +2,12 @@
 <glossary xmlns="http://www.ibm.com/is/bg/importexport"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.ibm.com/is/bg/importexport BGSchema.xsd"
-    version="1.6" exportTime="1534866295990"
-    ignoreAssignedAssets="false" ignoreLabeledAssets="false"
-    ignoreAssetCollections="false" ignoreStewards="false">
+    version="1.6" exportTime="1535682514992" ignoreAssignedAssets="true"
+    ignoreLabeledAssets="true" ignoreAssetCollections="true" ignoreStewards="true">
     <categories>
+        <category
+            rid="6662c0f2.ee6a64fe.qir6b1i7d.2dm00g9.vbq60u.kg14ac4uajbrtnsj11fhj"
+            name="Crown Jewels" shortDescription="All data that is sensitive customer info per regulatory obligations"/>
         <category
             rid="6662c0f2.ee6a64fe.8dbmamn82.g575q50.kunbuf.rf9ii0ed26t5n2lb3bupo"
             name="Mortgage_category" shortDescription="Mortgage details "/>
@@ -30,6 +32,14 @@
     </categories>
     <terms>
         <term
+            rid="6662c0f2.e1b1ec6c.qir6b1i7u.binfbdg.egtivh.p46rknraghgst9o1umnoc"
+            name="Sensitive Personal Data"
+            shortDescription="Any data deemed to be sensitive personal info for a customer"
+            status="ACCEPTED" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.qir6b1i7d.2dm00g9.vbq60u.kg14ac4uajbrtnsj11fhj" identity="Crown Jewels"/>
+        </term>
+        <term
             rid="6662c0f2.e1b1ec6c.8dbmamnrd.ko7q6eu.rjqicg.2lg1jjjtu0roe9fnllpk3"
             name="appliedonline"
             shortDescription="Binary column represents if application for mortgage submitted online"
@@ -53,107 +63,20 @@
                 rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
         </term>
         <term
+            rid="6662c0f2.e1b1ec6c.qir6b1ofd.hs49352.7jpbit.dtpgel28tpn2im539rn6p"
+            name="Customer-Mortgagor"
+            shortDescription="The mortgagor is the person who takes on the mortgage on their property"
+            status="ACCEPTED" type="NONE">
+            <parentCategory
+                rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
+        </term>
+        <term
             rid="6662c0f2.e1b1ec6c.8dbmamnko.q88di3r.lm4ff8.1oq7hnsj6uasadncjre1v"
             name="id"
             shortDescription="A unique number to identify individual mortgage"
             status="CANDIDATE" type="NONE">
             <parentCategory
                 rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
-            <assignedAssets>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vn.ak34069.k28nfh.ngj1ov6jumauvarli6rpf"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="ID"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vm.u7djhng.hk9h5g.dmuqrnet3acr6gsrt28b9"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_PROPERTY"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vo.cbdg7ko.s825kg.lboc091mmic43iqdpk3qo"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="ID"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vn.ak3273j.d0ks09.a3ol6f38qcpqsnmqh5uuf"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_DEFAULT"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vm.u7def68.rvp7ig.jdsovq2u9dbke680j8ceh"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="ID"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vm.n2q6446.vq4ah1.hit8nsr9j9bgd9658mcgu"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_CUSTOMER"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak1uvo6.ct9iji.njb1agh4m55vck60o2342"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_CUSTOMER" column="ID"/>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak1tfho.vio148.5c6e522vu0khbi8s285gs"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_DEFAULT" column="ID"/>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak1sqj1.s84kr0.93825rrpn75sgbk5flq1c"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_PROPERTY" column="ID"/>
-            </assignedAssets>
         </term>
         <term
             rid="6662c0f2.e1b1ec6c.8dbmamnqr.1frt7gm.9h4ja6.6v6pvep40idkrhrflsekh"
@@ -161,39 +84,6 @@
             status="CANDIDATE" type="NONE">
             <parentCategory
                 rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
-            <assignedAssets>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ajha80n.poi8ma.s2v8ll7e93lnth91e7a5r"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_CUSTOMER" column="INCOME"/>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vm.u7des2p.2d8019.0jvqe6m053ihdcroamrdh"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="INCOME"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vm.n2q6446.vq4ah1.hit8nsr9j9bgd9658mcgu"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_CUSTOMER"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-            </assignedAssets>
         </term>
         <term
             rid="6662c0f2.e1b1ec6c.8dbmamo0k.eab20hk.0iunlk.jc3dddp67iilndlj089pa"
@@ -216,39 +106,6 @@
             status="CANDIDATE" type="NONE">
             <parentCategory
                 rid="6662c0f2.ee6a64fe.8dbmamnbu.v3jj7k1.voqclr.b12kaq8iv4qvehg7ijd0f" identity="Mortgage_category::mortgage_customer"/>
-            <assignedAssets>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vm.u7dd7l9.65dkbl.hn922ogqj2vh71j91u021"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="RESIDENCE"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vm.n2q6446.vq4ah1.hit8nsr9j9bgd9658mcgu"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_CUSTOMER"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ajhc4t2.ic1di8.e3gehbpg7jtsdlohefn37"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_CUSTOMER" column="RESIDENCE"/>
-            </assignedAssets>
         </term>
         <term
             rid="6662c0f2.e1b1ec6c.8dbmamnt7.kjff57n.qc6ndo.tnc2nua754kvkk1upopo2"
@@ -273,101 +130,6 @@
             status="CANDIDATE" type="NONE">
             <parentCategory
                 rid="6662c0f2.ee6a64fe.8dbmamnav.ef978ja.igl423.lckp9vda4f84i5c9qb76d" identity="Mortgage_category::mortgage_default"/>
-            <assignedAssets>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vn.ak34069.k28nfh.ngj1ov6jumauvarli6rpf"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="ID"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vm.u7djhng.hk9h5g.dmuqrnet3acr6gsrt28b9"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_PROPERTY"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vo.cbdg7ko.s825kg.lboc091mmic43iqdpk3qo"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="ID"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vn.ak3273j.d0ks09.a3ol6f38qcpqsnmqh5uuf"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_DEFAULT"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak1uvo6.ct9iji.njb1agh4m55vck60o2342"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_CUSTOMER" column="ID"/>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vm.u7def68.rvp7ig.jdsovq2u9dbke680j8ceh"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="ID"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vm.n2q6446.vq4ah1.hit8nsr9j9bgd9658mcgu"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_CUSTOMER"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak1sqj1.s84kr0.93825rrpn75sgbk5flq1c"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_PROPERTY" column="ID"/>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak1tfho.vio148.5c6e522vu0khbi8s285gs"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_DEFAULT" column="ID"/>
-            </assignedAssets>
         </term>
         <term
             rid="6662c0f2.e1b1ec6c.8dbmamnoa.o9hhesh.ecrvin.ts4uvv28jrmlijk7c2o97"
@@ -384,101 +146,6 @@
             status="CANDIDATE" type="NONE">
             <parentCategory
                 rid="6662c0f2.ee6a64fe.8dbmamncm.smav6of.15uinu.m31o4mmgts7022vd31e2k" identity="Mortgage_category::mortgage_property"/>
-            <assignedAssets>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vn.ak34069.k28nfh.ngj1ov6jumauvarli6rpf"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="ID"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vm.u7djhng.hk9h5g.dmuqrnet3acr6gsrt28b9"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_PROPERTY"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vo.cbdg7ko.s825kg.lboc091mmic43iqdpk3qo"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="ID"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vn.ak3273j.d0ks09.a3ol6f38qcpqsnmqh5uuf"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_DEFAULT"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vm.u7def68.rvp7ig.jdsovq2u9dbke680j8ceh"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="ID"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vm.n2q6446.vq4ah1.hit8nsr9j9bgd9658mcgu"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_CUSTOMER"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak1uvo6.ct9iji.njb1agh4m55vck60o2342"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_CUSTOMER" column="ID"/>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak1sqj1.s84kr0.93825rrpn75sgbk5flq1c"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_PROPERTY" column="ID"/>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak1tfho.vio148.5c6e522vu0khbi8s285gs"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_DEFAULT" column="ID"/>
-            </assignedAssets>
         </term>
         <term
             rid="6662c0f2.e1b1ec6c.8dbmamnq1.r82sgvi.rlei04.9pbfmt4c2vcjvai9v8cfi"
@@ -487,39 +154,6 @@
             status="CANDIDATE" type="NONE">
             <parentCategory
                 rid="6662c0f2.ee6a64fe.8dbmamncm.smav6of.15uinu.m31o4mmgts7022vd31e2k" identity="Mortgage_category::mortgage_property"/>
-            <assignedAssets>
-                <columnRef
-                    rid="b1c497ce.60641b50.n2km9v5v8.ak2cv4t.cfp643.oaga7i5vvq2563icb14o1"
-                    host="jdbc:db2://9.30.45.80:50000/mortgage"
-                    databaseName="db2" databaseDBMS="DB2/LINUXX8664"
-                    schema="DB2INST1" table="MORTGAGE_PROPERTY" column="LOCATION"/>
-                <assetRef
-                    assetRid="ec1481df.c862f974.n2km9v5vn.ak348l9.v2n3ga.totbb3alfighlr2nt20nf"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                    <attributeVal name="name" value="LOCATION"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.n2km9v5vm.u7djhng.hk9h5g.dmuqrnet3acr6gsrt28b9"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                            <attributeVal name="name" value="MORTGAGE_PROPERTY"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.n2km9v5vm.3h1eemf.3ueft8.08hf1bibep4spnjbejmae"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.000m9l283.fudlto8.nc4r5a.ea5g41avo2lt4nq3up54b"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.2/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-            </assignedAssets>
         </term>
         <term
             rid="6662c0f2.e1b1ec6c.8dbmamnp9.8q364lb.d83nql.53e1p79b7senmo6ikmg0c"
@@ -530,4 +164,41 @@
                 rid="6662c0f2.ee6a64fe.8dbmamncm.smav6of.15uinu.m31o4mmgts7022vd31e2k" identity="Mortgage_category::mortgage_property"/>
         </term>
     </terms>
+    <policies>
+        <policy
+            rid="6662c0f2.8ed29152.qir6b1i8t.l88d414.grd1i8.0r5vc11m2beoa7ljkquc6"
+            name="Protection of  sensitive data" shortDescription="Ensure customer privacy by protecting sensitive data">
+            <referencedRules>
+                <ruleRef
+                    rid="6662c0f2.e1b13efc.qir6b1iaf.beafisc.s56jbo.dekut9m2eva89hlvi44r2" identity="Any derived sensitive data (name + tel number + age + gender) must be encrypted if customer id is not tokenized"/>
+                <ruleRef
+                    rid="6662c0f2.e1b13efc.qir6b1ii4.4u0qi7i.t27uu3.o12nq8c1hm55q9h6b7qvf" identity="Client ID/SSN must be masked"/>
+                <ruleRef
+                    rid="6662c0f2.e1b13efc.qir6b1i9b.e8cu9gt.fjqa1p.0po1ch17dp3e09cfdtqjg" identity="Credit Card data must be masked"/>
+            </referencedRules>
+        </policy>
+    </policies>
+    <rules>
+        <rule
+            rid="6662c0f2.e1b13efc.qir6b1iaf.beafisc.s56jbo.dekut9m2eva89hlvi44r2" name="Any derived sensitive data (name + tel number + age + gender) must be encrypted if customer id is not tokenized">
+            <referencedByPolicies>
+                <policyRef
+                    rid="6662c0f2.8ed29152.qir6b1i8t.l88d414.grd1i8.0r5vc11m2beoa7ljkquc6" identity="Protection of  sensitive data"/>
+            </referencedByPolicies>
+        </rule>
+        <rule
+            rid="6662c0f2.e1b13efc.qir6b1ii4.4u0qi7i.t27uu3.o12nq8c1hm55q9h6b7qvf" name="Client ID/SSN must be masked">
+            <referencedByPolicies>
+                <policyRef
+                    rid="6662c0f2.8ed29152.qir6b1i8t.l88d414.grd1i8.0r5vc11m2beoa7ljkquc6" identity="Protection of  sensitive data"/>
+            </referencedByPolicies>
+        </rule>
+        <rule
+            rid="6662c0f2.e1b13efc.qir6b1i9b.e8cu9gt.fjqa1p.0po1ch17dp3e09cfdtqjg" name="Credit Card data must be masked">
+            <referencedByPolicies>
+                <policyRef
+                    rid="6662c0f2.8ed29152.qir6b1i8t.l88d414.grd1i8.0r5vc11m2beoa7ljkquc6" identity="Protection of  sensitive data"/>
+            </referencedByPolicies>
+        </rule>
+    </rules>
 </glossary>
