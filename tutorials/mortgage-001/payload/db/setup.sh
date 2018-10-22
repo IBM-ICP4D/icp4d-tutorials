@@ -3,7 +3,7 @@
 RIGHT_NOW=$(date +"%x %r %Z")
 TIME_STAMP="Updated on $RIGHT_NOW by $USER"
 PAYLOAD="payload"
-DB2_DOCKER_NAME="icp4d-tutorial"
+DB2_DOCKER_NAME="Db2wh"
 D=docker
 
 
@@ -11,19 +11,10 @@ D=docker
 
 __loadDB2Docker()
 {
-
-
    $D images > /dev/null 2>&1; rc=$?;
    if [[ $rc != 0 ]]; then
                 echo "Docker Not Installed. Are you on ICP4D cluster environment ?"
                 exit 1
-   fi
-
-   if [[ ! `docker images --quiet ibmcom/db2express-c:latest` ]]; then
-        echo -e "\nLoading Docker $DB2_DOCKER_NAME ..."
-        $D run -d --name $DB2_DOCKER_NAME -p 50000:50000 -e DB2INST1_PASSWORD=password -e LICENSE=accept  ibmcom/db2express-c:latest db2start
-        #Wait couple of minutes to make sure db2 instance started and online
-        sleep 120
    fi
 
    echo -e "\nMaking some space for data"
