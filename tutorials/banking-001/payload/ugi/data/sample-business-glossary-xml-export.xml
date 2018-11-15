@@ -23,39 +23,6 @@
             status="STANDARD" type="NONE">
             <parentCategory
                 rid="6662c0f2.ee6a64fe.qgbm0rc4j.fhqrfq9.f6asn3.cdegbk36arnkafra250n2" identity="Business Information::Customer Information"/>
-            <assignedAssets>
-                <assetRef
-                    assetRid="ec1481df.c862f974.qgbm0rdc5.b5vgpsr.b0l9ba.odj7a0em8vmjrlm10v0ce"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.1/investigate.ecore">
-                    <attributeVal name="name" value="AGE"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.qgbm0rdc5.9prntr2.guecpv.3sku2ohkpsqu5dt9p1ib6"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.1/investigate.ecore">
-                            <attributeVal name="name" value="CUSTOMER"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.qgbm0rdc5.95lq24r.7n0oai.59cq9ujsei038d6pjj3a6"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.1/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.00160kslc.kslacte.2q5jm0.7mrnrgm3df3lgvcp031in"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.1/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <columnRef
-                    rid="b1c497ce.60641b50.qgbm0rdc3.qku9dlb.luqd0i.3sl4jl721mhm5c0bcgof7"
-                    host="IISDOCKER" databaseName="SAMPLE"
-                    databaseInstance="db2inst1" databaseDBMS="DB2"
-                    schema="DB2INST1" table="CUSTOMER" column="AGE"/>
-            </assignedAssets>
         </term>
         <term
             rid="6662c0f2.e1b1ec6c.qgbm0rc7v.2pq6c6s.3i3h4a.24tce8gv4t7hqq3ip7hl4"
@@ -64,50 +31,6 @@
             status="STANDARD" type="NONE">
             <parentCategory
                 rid="6662c0f2.ee6a64fe.qgbm0rc4j.fhqrfq9.f6asn3.cdegbk36arnkafra250n2" identity="Business Information::Customer Information"/>
-            <assignedAssets>
-                <assetRef
-                    assetRid="ec1481df.bae4d6b7.qgbm0rcpv.q53k136.9v96h0.1oook2djhgioelv3fbars"
-                    className="DataQualityConfigurationAction" packageUri="http:///ASCLModel/6.1/investigate.ecore">
-                    <referenceVal reference="from_Rule">
-                        <assetRef
-                            assetRid="b20de59c.270b1c.qgbm0rcpv.q53ikku.cpe1or.lmt5l7v213t59rt1f9r4s1s"
-                            className="Rule" packageUri="http:///ASCLModel/3.1/ASCLRules.ecore">
-                            <attributeVal name="name" value="Validate Email Address Format"/>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <assetRef
-                    assetRid="ec1481df.c862f974.qgbm0rdc5.b5vgskp.kkl1ro.f4mae6m1tn0rcp5pcgm6e"
-                    className="ColumnAnalysisMaster" packageUri="http:///ASCLModel/6.1/investigate.ecore">
-                    <attributeVal name="name" value="EMAILADDRESS"/>
-                    <referenceVal reference="TableAnalysisMaster">
-                        <assetRef
-                            assetRid="ec1481df.fee6c3ac.qgbm0rdc5.9prntr2.guecpv.3sku2ohkpsqu5dt9p1ib6"
-                            className="TableAnalysisMaster" packageUri="http:///ASCLModel/6.1/investigate.ecore">
-                            <attributeVal name="name" value="CUSTOMER"/>
-                            <referenceVal reference="AnalysisMaster">
-                                <assetRef
-                                    assetRid="ec1481df.8996807e.qgbm0rdc5.95lq24r.7n0oai.59cq9ujsei038d6pjj3a6"
-                                    className="AnalysisMaster" packageUri="http:///ASCLModel/6.1/investigate.ecore">
-                                    <attributeVal name="name" value="DB2INST1"/>
-                                    <referenceVal reference="AnalysisProject">
-                                    <assetRef
-                                    assetRid="ec1481df.64b1b87d.00160kslc.kslacte.2q5jm0.7mrnrgm3df3lgvcp031in"
-                                    className="AnalysisProject" packageUri="http:///ASCLModel/6.1/investigate.ecore">
-                                    <attributeVal name="name" value="UGDefaultWorkspace"/>
-                                    </assetRef>
-                                    </referenceVal>
-                                </assetRef>
-                            </referenceVal>
-                        </assetRef>
-                    </referenceVal>
-                </assetRef>
-                <columnRef
-                    rid="b1c497ce.60641b50.qgbm0rdc3.qku93o8.t3ub11.g0gl32ino4p40lknl3oh7"
-                    host="IISDOCKER" databaseName="SAMPLE"
-                    databaseInstance="db2inst1" databaseDBMS="DB2"
-                    schema="DB2INST1" table="CUSTOMER" column="EMAILADDRESS"/>
-            </assignedAssets>
         </term>
         <term
             rid="6662c0f2.e1b1ec6c.qgbm0rc7b.ge3m3ck.ek0rn9.qac6g2m43vs03gdidolfg"
