@@ -1,6 +1,6 @@
-# ICP4Data Tutorial 
+# Cloud Pack For Data Tutorial 
 
-This is the repository for the ICP4D Tutorial Data and setup. ICP4D Tutorial is based on IBM ICP4Data v2.1. For more information on this exciting new Data Science Platform, please visit  [ibm.com](http://ibm.com). ICP4Data provides an end-to-end, integrated & governed data & analytics solution platform where Data Engineers Data Stewards, Data Scientists and Business Users collaborate to bring forward the best insights from the existing data in the enterprise.
+This is the repository for the ICP4D Tutorial Data and setup. ICP4D Tutorial is based on IBM Cloud Pak for data v2.1. For more information on this exciting new Data Science Platform, please visit  [ibm.com](http://ibm.com). ICP4Data provides an end-to-end, integrated & governed data & analytics solution platform where Data Engineers Data Stewards, Data Scientists and Business Users collaborate to bring forward the best insights from the existing data in the enterprise.
 
 
 ## Flow
@@ -33,7 +33,7 @@ Follow these steps to create the required services and run the notebook locally.
 
 ### 1. Clone the repo
 
-Clone the `icp4data tutorial` repository locally. In a terminal, run the following command:
+Clone the `Cloud Pak for Data tutorial` repository locally. In a terminal, run the following command:
 
 ```
 $ git clone git@github.com:IBM-ICP4D/ICP4DTutorial.git

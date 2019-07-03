@@ -19,9 +19,9 @@ __loadDB2Docker()
         exit 1
    fi
 
-   if [[ ! `docker images --quiet ibmcom/db2express-c:latest` ]]; then
+   if [[ ! `docker images --quiet cloudpakdata/db2express` ]]; then
         echo -e "\nLoading Docker $DB2_DOCKER_NAME ..."
-        $D run -d --name $DB2_DOCKER_NAME -p 50000:50000 -e DB2INST1_PASSWORD=password -e LICENSE=accept  ibmcom/db2express-c:latest db2start
+        $D run -d --name $DB2_DOCKER_NAME -p 50000:50000 -e DB2INST1_PASSWORD=password -e LICENSE=accept  cloudpakdata/db2express db2start
         #Wait couple of minutes to make sure db2 instance started and online
         sleep 120
    fi
