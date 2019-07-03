@@ -1,14 +1,14 @@
-# Cloud Pack For Data Tutorial 
+# Cloud Pak For Data Tutorial 
 
-This is the repository for the ICP4D Tutorial Data and setup. ICP4D Tutorial is based on IBM Cloud Pak for data v2.1. For more information on this exciting new Data Science Platform, please visit  [ibm.com](http://ibm.com). ICP4Data provides an end-to-end, integrated & governed data & analytics solution platform where Data Engineers Data Stewards, Data Scientists and Business Users collaborate to bring forward the best insights from the existing data in the enterprise.
+This is the repository for the CP4D Tutorial Data and setup. CP4D Tutorial is based on  Cloud Pak for data v2.1. For more information on this exciting new Data Science Platform, please visit  [ibm.com](http://ibm.com). CP4Data provides an end-to-end, integrated & governed data & analytics solution platform where Data Engineers Data Stewards, Data Scientists and Business Users collaborate to bring forward the best insights from the existing data in the enterprise.
 
 
 ## Flow
 1. Download and Load the core setup modules.
-2. Import the dataset into IBM ICP4Data
+2. Import the dataset into IBM CP4Data
 3. Prepare and shape the dataset using Data Transform.
 4. Using Imported Jupyter notebook , train a simple linear regression model.
-5. Save the resulting model into ICP4Data.
+5. Save the resulting model into CP4Data.
 6. Use the saved model for predictions
 
 ## Featured technologies
