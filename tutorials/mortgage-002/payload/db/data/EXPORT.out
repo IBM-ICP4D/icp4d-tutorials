@@ -1,0 +1,25 @@
+
+*****  DB2MOVE  *****
+
+Action:  EXPORT
+
+Start time:  Tue Aug  7 17:39:55 2018
+
+
+Connecting to database MORTGAGE ... successful!  Server : DB2 Common Server V10.5.5
+
+Binding package automatically ... /home/db2inst1/sqllib/bnd/db2common.bnd ... successful!
+
+Binding package automatically ... /home/db2inst1/sqllib/bnd/db2move.bnd ... successful!
+
+EXPORT:    151 rows from table "SYSTOOLS"."HMON_ATM_INFO"
+EXPORT:      0 rows from table "SYSTOOLS"."HMON_COLLECTION"
+EXPORT:    419 rows from table "DB2INST1"."MORTGAGE_CUSTOMER"
+EXPORT:    419 rows from table "DB2INST1"."MORTGAGE_DEFAULT"
+EXPORT:    419 rows from table "DB2INST1"."MORTGAGE_JOIN"
+EXPORT:    419 rows from table "DB2INST1"."MORTGAGE_PROPERTY"
+EXPORT:      5 rows from table "SYSTOOLS"."POLICY"
+
+Disconnecting from database ... successful!
+
+End time:  Tue Aug  7 17:39:57 2018
