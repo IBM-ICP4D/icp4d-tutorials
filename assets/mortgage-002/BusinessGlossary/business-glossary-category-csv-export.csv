@@ -1,0 +1,6 @@
+Name,Artifact Type,Category,Description,Tags,Classifications,Stewards
+Crown Jewels,category,,All data that is sensitive customer info per regulatory obligations,,,
+Mortgage_category,category,,Mortgage details,,,
+mortgage_customer,category,Mortgage_category,Customer financial details,,,
+mortgage_default,category,Mortgage_category,Final status of a mortgage,,,
+mortgage_property,category,Mortgage_category,Basic information about individual property,,,
