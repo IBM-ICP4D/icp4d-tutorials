@@ -1,0 +1,4 @@
+Name,Artifact Type,Category,Description
+Any derived sensitive data (name + tel number + age + gender) must be encrypted if customer id is not tokenized,rule,,Protection of sensitive data
+Client ID/SSN must be masked,rule,,Protection of sensitive data
+Credit Card data must be masked,rule,,Protection of sensitive data
