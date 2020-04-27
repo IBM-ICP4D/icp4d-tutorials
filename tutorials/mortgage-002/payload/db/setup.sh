@@ -4,8 +4,14 @@ RIGHT_NOW=$(date +"%x %r %Z")
 TIME_STAMP="Updated on $RIGHT_NOW by $USER"
 PAYLOAD="payload"
 DB2_DOCKER_NAME="icp4d-tutorial"
-D=docker
 
+# Check podman avaialble
+which podman > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    D=podman
+else
+    D=docker
+fi
 
 ##### Functions
 
