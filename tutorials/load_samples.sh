@@ -38,7 +38,7 @@ list=
  
 
 # Check docker availability
-which docker > /dev/null 2>&1
+docker images > /dev/null 2>&1
 if [ $? -ne 0 ]; then
     echo "Docker is not available on this system."
     echo "You need to install Docker (yum install -y docker) to continue with this tutorial."
