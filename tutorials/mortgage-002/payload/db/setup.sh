@@ -5,13 +5,7 @@ TIME_STAMP="Updated on $RIGHT_NOW by $USER"
 PAYLOAD="payload"
 DB2_DOCKER_NAME="icp4d-tutorial"
 
-# Check podman avaialble
-which podman > /dev/null 2>&1
-if [ $? -eq 0 ]; then
-    D=podman
-else
-    D=docker
-fi
+D=docker
 
 ##### Functions
 
@@ -25,7 +19,7 @@ __loadDB2Docker()
                 exit 1
    fi
 
-   if [[ ! `docker images --quiet cloudpakdata/db2express` ]]; then
+   if [[ ! `$D images --quiet cloudpakdata/db2express` ]]; then
         echo -e "\nLoading Docker $DB2_DOCKER_NAME ..."
         $D run -d --name $DB2_DOCKER_NAME -p 50000:50000 -e DB2INST1_PASSWORD=password -e LICENSE=accept  cloudpakdata/db2express db2start
         #Wait couple of minutes to make sure db2 instance started and online
