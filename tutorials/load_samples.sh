@@ -37,6 +37,15 @@ help=
 list=
  
 
+# Check docker availability
+which docker > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+    echo "Docker is not available on this system."
+    echo "You need to install Docker (yum install -y docker) to continue with this tutorial."
+    exit 1
+fi
+
+
 if [[ $# -eq 0 ]]; then
     usage
 	exit 1
